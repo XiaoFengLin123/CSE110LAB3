@@ -70,12 +70,24 @@ class Task extends HBox {
     }
 
     public void toggleDone() {
-        
-        markedDone = true;
-        this.setStyle("-fx-border-color: #000000; -fx-border-width: 0; -fx-font-weight: bold;"); // remove border of task
-        for (int i = 0; i < this.getChildren().size(); i++) {
-            this.getChildren().get(i).setStyle("-fx-background-color: #BCE29E; -fx-border-width: 0;"); // change color of task to green
+        this.markedDone = !this.markedDone;
+        if (this.markedDone) {
+            this.setStyle("-fx-border-color: #000000; -fx-border-width: 0; -fx-font-weight: bold;"); // remove border of task
+            for (int i = 0; i < this.getChildren().size(); i++) {
+                this.getChildren().get(i).setStyle("-fx-background-color: #BCE29E; -fx-border-width: 0;"); // change color of task to green
+            }
+        } else {
+            this.setStyle("-fx-background-color: #DAE5EA; -fx-border-width: 0; -fx-font-weight: bold;"); // sets background color of task
+            for (int i = 0; i < this.getChildren().size(); i++) {
+                this.getChildren().get(i).setStyle("-fx-background-color: #DAE5EA; -fx-border-width: 0;"); // set background color of texfield
+            }
         }
+        // markedDone = true;
+        // this.setStyle("-fx-border-color: #000000; -fx-border-width: 0; -fx-font-weight: bold;"); // remove border of task
+        // for (int i = 0; i < this.getChildren().size(); i++) {
+        //     this.getChildren().get(i).setStyle("-fx-background-color: #BCE29E; -fx-border-width: 0;"); // change color of task to green
+        // }
+
     }
 }
 
@@ -117,6 +129,11 @@ class TaskList extends VBox {
             while ((line = reader.readLine()) != null) {
                 Task task = new Task();
                 task.getTaskName().setText(line);
+                Button doneButton = task.getDoneButton();
+                doneButton.setOnAction(e1 -> {
+                    // Call toggleDone on click
+                    task.toggleDone();
+                });
                 this.getChildren().add(task);
             }
             reader.close();
