@@ -1,7 +1,7 @@
-module edu.ucsd.todolist {
+module edu.ucsd.spendingtracker {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens edu.ucsd.todolist to javafx.fxml;
-    exports edu.ucsd.todolist;
+    opens edu.ucsd.spendingtracker to javafx.fxml;
+    exports edu.ucsd.spendingtracker;
 }
