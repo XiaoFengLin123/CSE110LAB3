@@ -1,2 +1,14 @@
-/Users/tony/Desktop/todolist/Lab3 - Starter/src/main/java/module-info.java
-/Users/tony/Desktop/todolist/Lab3 - Starter/src/main/java/edu/ucsd/spendingtracker/App.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/App.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/datasource/InMemoryDataSource.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/model/Category.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/model/Expense.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/model/Model.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/presenter/AbstractPresenter.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/presenter/PresenterManager.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/presenter/PresenterSwitcher.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/presenter/SpendingPresenter.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/presenter/SummaryPresenter.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/repository/ExpenseRepository.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/view/SpendingView.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/edu/ucsd/spendingtracker/view/SummaryView.java
+/Users/aalmazloum/Desktop/CSE110/CSE110LAB3/src/main/java/module-info.java
